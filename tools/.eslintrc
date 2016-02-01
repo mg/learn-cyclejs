@@ -1,0 +1,22 @@
+{
+  "root": true,
+  "ecmaFeatures": {
+    "classes": true,
+    "arrowFunctions": true,
+    "blockBindings": true,
+    "jsx": true
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jasmine": true
+  },
+  "rules": {
+    "eol-last": false,
+    "no-unused-vars": false,
+    "no-underscore-dangle": false,
+    "new-cap": false,
+    "dot-notation": false,
+    "no-use-before-define": false
+  }
+}
