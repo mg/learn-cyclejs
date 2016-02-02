@@ -10,13 +10,22 @@
 			 height: 100%;
 			 margin: 0;
 		 }
+
+		 ul {
+			 margin: 0;
+			 padding: 0;
+			 margin-right: 20px;
+		 }
 	 </style>
 </head>
 <body>
-	<div id="app">
-		<div id='video01'><h3>Video 1</h3><div class='mount'/></div>
-		<div id='video02'><h3>Video 2</h3><div class='mount'/></div>
-		<div id='video03'><h3>Video 3</h3><div class='mount'/></div>
+	<div id="app" style="display: flex">
+		<ul>
+			<li><a href="#" class="tab" id="video01">Video 1</a></li>
+			<li><a href="#" class="tab" id="video02">Video 2</a></li>
+			<li><a href="#" class="tab" id="video03">Video 3</a></li>
+		</ul>
+		<div id="mount"/>
 	</div>
 	<script src="/static/bundle.js" type="text/javascript"></script>
 </body>

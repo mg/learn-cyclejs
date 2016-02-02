@@ -2,24 +2,30 @@
 
 import Rx from 'rx'
 
-// Logic (functional)
-function main() {
-  return Rx.Observable.timer(0, 1000) //0--1--2--3--4--5--6--
-    .map(i => `Seconds elapsed ${i}`)
-}
+export default function(mount) {
+  let subDom, subLog
 
-// Effects (imperative)
-function DOMEffect(text$) {
-  text$.subscribe(text => {
-    const container= document.querySelector('#video02 div.mount')
-    container.textContent= text
-  })
-}
+  // Logic (functional)
+  function main() {
+    return Rx.Observable.timer(0, 1000) //0--1--2--3--4--5--6--
+      .map(i => `Seconds elapsed ${i}`)
+  }
 
-function consoleLogEffect(msg$) {
-  msg$.subscribe(msg => console.log(msg))
-}
+  // Effects (imperative)
+  function DOMEffect(text$) {
+    subDom= text$.subscribe(text => {
+      const container= document.querySelector(mount)
+      container.textContent= text
+    })
+  }
 
-const sink= main()
-DOMEffect(sink)
-consoleLogEffect(sink)
+  function consoleLogEffect(msg$) {
+    subLog= msg$.subscribe(msg => console.log(msg))
+  }
+
+  const sink= main()
+  DOMEffect(sink)
+  consoleLogEffect(sink)
+
+  return [subDom, subLog]
+}
