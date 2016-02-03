@@ -47,6 +47,7 @@
     "webpack-hot-middleware": "^2.4.1"
   },
   "dependencies": {
+    "@cycle/core": "^6.0.2",
     "rx": "^4.0.7",
     "rx-dom": "^7.0.3"
   }
