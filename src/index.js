@@ -9,6 +9,11 @@ const videos= {
   video05: require('./video05'),
   video06: require('./video06'),
   video07: require('./video07'),
+  video08: require('./video08'),
+  video09: require('./video09'),
+  video10: require('./video10'),
+  video11: require('./video11'),
+  video12: require('./video12'),
 }
 
 let subscriptions
