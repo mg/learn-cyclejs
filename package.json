@@ -1,5 +1,5 @@
 {
-  "name": "reactive-programming-with-rxjs",
+  "name": "cyclejs-fundamentals",
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
@@ -48,6 +48,8 @@
   },
   "dependencies": {
     "@cycle/core": "^6.0.2",
+    "@cycle/dom": "^9.0.2",
+    "@cycle/http": "^8.0.0",
     "rx": "^4.0.7",
     "rx-dom": "^7.0.3"
   }
