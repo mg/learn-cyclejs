@@ -19,6 +19,9 @@ const videos= {
   video15: require('./video15'),
   video16: require('./video16'),
   video17: require('./video17'),
+  video18: require('./video18'),
+  video19: require('./video19'),
+  video20: require('./video20'),
 }
 
 let subscriptions
